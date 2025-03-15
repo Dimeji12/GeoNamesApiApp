@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Table</title>
+    <link rel="stylesheet" href="./libs/css/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <h1>API Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>API Name</th>
+                <th>API Description</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="API Name">Country Info</td>
+                <td data-label="API Description">
+                    <label for="selCountry">Country Code:</label>
+                    <input type="text" id="selCountry" placeholder="e.g., GB">
+                    <label for="selLanguage">Language:</label>
+                    <input type="text" id="selLanguage" placeholder="e.g., en">
+                </td>
+                <td data-label="Action"><button id="btnCountryInfo">Get Country Info</button></td>
+            </tr>
+            <tr>
+                <td data-label="API Name">Time Zone</td>
+                <td data-label="API Description">
+                    <label for="lat1">Latitude:</label>
+                    <input type="text" id="lat1" placeholder="e.g., 51.5074">
+                    <label for="lng1">Longitude:</label>
+                    <input type="text" id="lng1" placeholder="e.g., -0.1278">
+                </td>
+                <td data-label="Action"><button id="btnTimeZone">Get Time Zone</button></td>
+            </tr>
+            <tr>
+                <td data-label="API Name">Weather</td>
+                <td data-label="API Description">
+                    <label for="lat2">Latitude:</label>
+                    <input type="text" id="lat2" placeholder="e.g., 51.5074">
+                    <label for="lng2">Longitude:</label>
+                    <input type="text" id="lng2" placeholder="e.g., -0.1278">
+                </td>
+                <td data-label="Action"><button id="btnWeather">Get Weather</button></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <div id="result">
+                        <h3>Result:</h3>
+                        <p id="txtContinent">Continent:</p>
+                        <p id="txtCapital">Capital:</p>
+                        <p id="txtLanguages">Language:</p>
+                        <p id="txtPopulation">Population:</p>
+                        <p id="txtArea">Area:</p>
+                        <!--  <p id="txtTimeZone"></p>
+                        <p id="txtGMTOffset"></p>
+                        <p id="txtTemperature"></p>
+                        <p id="txtHumidity"></p>
+                        <p id="txtWindSpeed"></p>  -->
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script type="application/javascript" src="./libs/javascript/script.js"></script>
+    <script type="application/javascript" src="./libs/javascript/jquery-2.2.3.min.js"></script>
+
+</body>
+
+</html>
