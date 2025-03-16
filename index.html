@@ -21,6 +21,7 @@
             </tr>
         </thead>
         <tbody>
+            <!-- Country Info API -->
             <tr>
                 <td data-label="API Name">Country Info</td>
                 <td data-label="API Description">
@@ -31,6 +32,8 @@
                 </td>
                 <td data-label="Action"><button id="btnCountryInfo">Get Country Info</button></td>
             </tr>
+
+            <!-- Time Zone API -->
             <tr>
                 <td data-label="API Name">Time Zone</td>
                 <td data-label="API Description">
@@ -41,6 +44,8 @@
                 </td>
                 <td data-label="Action"><button id="btnTimeZone">Get Time Zone</button></td>
             </tr>
+
+            <!-- Weather API -->
             <tr>
                 <td data-label="API Name">Weather</td>
                 <td data-label="API Description">
@@ -51,6 +56,20 @@
                 </td>
                 <td data-label="Action"><button id="btnWeather">Get Weather</button></td>
             </tr>
+
+            <!-- Elevation API -->
+            <tr>
+                <td data-label="API Name">Elevation</td>
+                <td data-label="API Description">
+                    <label for="lat3">Latitude:</label>
+                    <input type="text" id="lat3" placeholder="e.g., 51.5074">
+                    <label for="lng3">Longitude:</label>
+                    <input type="text" id="lng3" placeholder="e.g., -0.1278">
+                </td>
+                <td data-label="Action"><button id="btnElevation">Get Elevation</button></td>
+            </tr>
+
+            <!-- Results Section -->
             <tr>
                 <td colspan="3">
                     <div id="result">
@@ -60,19 +79,20 @@
                         <p id="txtLanguages">Language:</p>
                         <p id="txtPopulation">Population:</p>
                         <p id="txtArea">Area:</p>
-                        <!--  <p id="txtTimeZone"></p>
-                        <p id="txtGMTOffset"></p>
-                        <p id="txtTemperature"></p>
-                        <p id="txtHumidity"></p>
-                        <p id="txtWindSpeed"></p>  -->
+                        <p id="txtTimeZone">Time Zone:</p>
+                        <p id="txtGMTOffset">GMT Offset:</p>
+                        <p id="txtTemperature">Temperature:</p>
+                        <p id="txtHumidity">Humidity:</p>
+                        <p id="txtWindSpeed">Wind Speed:</p>
+                        <p id="txtElevation">Elevation:</p>
                     </div>
                 </td>
             </tr>
         </tbody>
     </table>
-    <script type="application/javascript" src="./libs/javascript/script.js"></script>
-    <script type="application/javascript" src="./libs/javascript/jquery-2.2.3.min.js"></script>
 
+    <!-- JavaScript Files -->
+    <script type="application/javascript" src="./libs/javascript/script.js"></script>
 </body>
 
 </html>
